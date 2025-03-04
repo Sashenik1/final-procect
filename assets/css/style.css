@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  width: min(90em, 1170px);
+  width: min(90em, 1230px);
   margin-inline: auto;
 }
 
@@ -36,10 +36,10 @@ img {
   line-height: normal;
   letter-spacing: 0.025rem;
   color: #FFF;
+  transition: all 2s ease;
 }
 .btn:hover {
   background: #253D32;
-  transition: all 2s ease;
 }
 
 /*------------------------responsive-menu-----------------*/
@@ -231,6 +231,9 @@ img {
   margin: 50px 160px 150px 160px;
   gap: 72px;
 }
+.links .container nav ul li svg {
+  fill: #A2BDAA;
+}
 .links .container nav ul li svg:hover {
   fill: #253D32;
 }
@@ -284,13 +287,37 @@ img {
 }
 .servises .first .block1 a .svg-arrow {
   margin-top: 14px;
+  margin-bottom: 58px;
 }
 .servises .first .block1 a .svg-arrow:hover {
   fill: #253D32;
 }
+.servises .first .block1 h4 {
+  font-family: Rubik;
+  color: #253D32;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 39px;
+}
+.servises .first .block1 .rates {
+  width: 300px;
+  height: 200px;
+  background: url("../images/Group 1.png") #3d5a38 0px 0px/100% 103.367% no-repeat;
+  text-align: center;
+  padding: 20px;
+}
+.servises .first .block1 .rates .rate {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #FFF;
+  font-family: Rubik;
+  padding: 10px;
+  font-weight: 700;
+}
 .servises .first .block2 svg,
 .servises .first .block3 svg {
-  margin-bottom: 50px;
+  margin-bottom: 38px;
 }
 .servises .first .block2 h4,
 .servises .first .block3 h4 {
@@ -298,7 +325,7 @@ img {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 29px;
 }
 .servises .first .block2 p,
 .servises .first .block3 p {
