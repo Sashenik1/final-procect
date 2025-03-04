@@ -11,12 +11,14 @@ function updateDate() {
 updateDate();
 
 
+//-----------------------------------------------
 
 function toggleMenu() {
     document.body.classList.toggle('open-mobile-menu');
     document.querySelector(".hamburger").classList.toggle('is-active');
 }
 
+//-------------------------------------------------
 
 async function fetchExchangeRates() {
     try {
@@ -29,10 +31,24 @@ async function fetchExchangeRates() {
         document.getElementById('usd-rate').textContent = `USD: ${usd.rate.toFixed(2)} UAH`;
         document.getElementById('eur-rate').textContent = `EUR: ${eur.rate.toFixed(2)} UAH`;
     } catch (error) {
-        document.getElementById('usd-rate').textContent = 'Ошибка загрузки USD';
-        document.getElementById('eur-rate').textContent = 'Ошибка загрузки EUR';
-        console.error('Ошибка получения данных:', error);
+        document.getElementById('usd-rate').textContent = 'Помилка завантаження USD';
+        document.getElementById('eur-rate').textContent = 'Помилка завантаження EUR';
+        console.error('Помилка отримання даних:', error);
     }
 }
 
 fetchExchangeRates();
+
+//-----------------------------------------------
+
+let currentPos = 1;
+function swapShapes() {
+    let square = document.getElementById("square");
+    let nextPos = (currentPos % 4) + 1;
+    let nextElement = document.getElementById(`pos${nextPos}`).firstElementChild;
+    
+    document.getElementById(`pos${currentPos}`).appendChild(nextElement);
+    document.getElementById(`pos${nextPos}`).appendChild(square);
+    
+    currentPos = nextPos;
+}
