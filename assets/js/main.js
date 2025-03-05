@@ -49,6 +49,8 @@ function swapShapes() {
     
     document.getElementById(`pos${currentPos}`).appendChild(nextElement);
     document.getElementById(`pos${nextPos}`).appendChild(square);
+    document.getElementById(`p${nextPos}`).style.fontWeight = 600;
+    document.getElementById(`p${currentPos}`).style.fontWeight = 400;
     
     currentPos = nextPos;
 }

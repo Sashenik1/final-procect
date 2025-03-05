@@ -248,6 +248,7 @@ img {
 .servises .first {
   display: flex;
   margin-left: 25px;
+  padding-right: 36px;
   margin-bottom: 96px;
   justify-content: space-between;
 }
@@ -298,7 +299,7 @@ img {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
-  margin-bottom: 39px;
+  margin-bottom: 50px;
 }
 .servises .first .block1 .rates {
   width: 300px;
@@ -480,10 +481,14 @@ img {
   fill: #253D32;
 }
 
+.readmore {
+  margin-right: 20px;
+}
+
 hgroup {
   display: flex;
   gap: 100px;
-  margin-left: 12px;
+  margin-left: 37px;
   margin-bottom: 37px;
 }
 hgroup h2 {
@@ -512,7 +517,7 @@ h4:last-child {
 .rectangles {
   display: flex;
   gap: 45px;
-  margin-left: 0px;
+  margin-left: 27px;
   margin-bottom: 231px;
 }
 .rectangles .rec {
@@ -559,7 +564,7 @@ footer {
   width: 1070px;
   height: 523px;
   margin-bottom: 100px;
-  margin-left: 0px;
+  margin-left: 20px;
   position: relative;
   display: flex;
 }
