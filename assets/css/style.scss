@@ -60,7 +60,6 @@ body {
 .container {
     width: min(90em, 1260px);
     margin-inline: auto;
-    // border: solid 2px blue;
 }
 
 ul,
@@ -162,8 +161,10 @@ img {
 
 .hamburger {
     position: relative;
-    left: 50px;
+    left: -25px;
     z-index: 2000;
+    display: block;
+
 }
 
 @media screen and (max-width: 900px) {
@@ -171,9 +172,7 @@ img {
         display: none;
     }
 
-    .hamburger {
-        display: block;
-    }
+
 
 }
 
@@ -206,8 +205,6 @@ img {
             width: 95%;
             margin-bottom: 54px;
             margin-top: 0px;
-            //border: 1px solid white;
-
 
 
             .logo {
@@ -274,8 +271,6 @@ img {
             color: white;
             width: 90%;
             margin-top: 23px;
-            // border: 1px solid blue;
-
 
 
             hgroup {
@@ -329,7 +324,6 @@ img {
 
     .container {
 
-        //width: ;
         nav ul {
             display: flex;
             justify-content: space-between;
@@ -359,7 +353,7 @@ img {
 .servises {
     display: flex;
     flex-direction: column;
-    
+
     // width: 100vw;
 
 
@@ -415,14 +409,11 @@ img {
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                
-                // background-color: $dark-green-color;
                 background: url('../images/Group 1.png') rgb(61, 90, 56) 0px 0px / 100% 103.367% no-repeat;
-               // text-align: center;
                 padding: 20px;
-                
 
-               .rate {
+
+                .rate {
                     font-size: 24px;
                     margin: 10px 0;
                     color: $white-color;
@@ -597,8 +588,8 @@ img {
 }
 
 //-----------------Read More ----------------
-.readmore{
-  margin-right: 20px;  
+.readmore {
+    margin-right: 20px;
 }
 
 hgroup {
@@ -775,14 +766,9 @@ footer {
 
 
             &:hover {
-
                 path {
                     fill: #3B5998;
                 }
-
-                //circle {
-                //  fill: #ffffff;
-                //}
             }
         }
 
@@ -797,9 +783,6 @@ footer {
                     fill: #00ACEE;
                 }
 
-                //circle {
-                // fill: #ffffff;
-                // }
             }
         }
 
@@ -814,15 +797,10 @@ footer {
                     fill: #C13584;
                 }
 
-                //  circle {
-                //     fill: #ffffff;
-                // }
             }
         }
 
     }
-
-
 
 
     li {

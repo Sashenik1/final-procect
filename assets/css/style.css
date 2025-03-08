@@ -97,17 +97,14 @@ img {
 
 .hamburger {
   position: relative;
-  left: 50px;
+  left: -25px;
   z-index: 2000;
+  display: block;
 }
 
 @media screen and (max-width: 900px) {
   .main-menu {
     display: none;
-  }
-
-  .hamburger {
-    display: block;
   }
 }
 @media screen and (min-width: 900px) {
